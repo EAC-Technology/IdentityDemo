@@ -1,0 +1,12 @@
+{
+    "ob_board": "1", 
+    "timer_guid": "", 
+    "name": "DeleteAccount", 
+    "custom_event_guid": "", 
+    "class_name": "", 
+    "is_button": "1", 
+    "guid": "e240548d-118c-4fab-85f6-3d5495ce152a", 
+    "type": "button", 
+    "page": "home", 
+    "description": ""
+}

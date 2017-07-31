@@ -1,0 +1,12 @@
+{
+    "ob_board": "0", 
+    "timer_guid": "", 
+    "name": "API", 
+    "custom_event_guid": "c957ee1c-d5a2-40c1-a04b-1bdbb74b710a", 
+    "class_name": "VEE_CustomEvent", 
+    "is_button": "0", 
+    "guid": "03381f55-010d-46b4-a869-1386e298ec6c", 
+    "type": "event", 
+    "page": "", 
+    "description": ""
+}

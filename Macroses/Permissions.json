@@ -1,0 +1,12 @@
+{
+    "ob_board": "1", 
+    "timer_guid": "", 
+    "name": "Permissions", 
+    "custom_event_guid": "", 
+    "class_name": "", 
+    "is_button": "1", 
+    "guid": "dcb37417-3682-42a6-a37b-3de8e7281568", 
+    "type": "button", 
+    "page": "home", 
+    "description": ""
+}
