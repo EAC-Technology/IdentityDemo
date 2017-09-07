@@ -292,23 +292,27 @@ Select case mainStep
     upd = 0
 
     if p("firstName") <> args("firstname") then
-      myclient.contract_call(abi, contract_id, "setFirstName", args("firstname"), 0, true)
+      tid = myclient.contract_call(abi, contract_id, "setFirstName", args("firstname"), 0, true)
       upd = 1
+      logger "First Name update transaction: " & tid
     end if
 
     if p("lastName") <> args("lastname") then
-      myclient.contract_call(abi, contract_id, "setLastName", args("lastname"), 0, true)
+      tid = myclient.contract_call(abi, contract_id, "setLastName", args("lastname"), 0, true)
       upd = 1
+      logger "Last Name update transaction: " & tid
     end if
 
     if p("email") <> args("email") then
-      myclient.contract_call(abi, contract_id, "setEmail", args("email"), 0, true)
+      tid = myclient.contract_call(abi, contract_id, "setEmail", args("email"), 0, true)
       upd = 1
+      logger "Email update transaction: " & tid
     end if
 
     if p("phone") <> args("phone") then
-      myclient.contract_call(abi, contract_id, "setPhone", args("phone"), 0, true)
+      tid = myclient.contract_call(abi, contract_id, "setPhone", args("phone"), 0, true)
       upd = 1
+      logger "Phone update transaction: " & tid
     end if
 
     if p("birthday") <> args("birthday") then
@@ -317,8 +321,9 @@ Select case mainStep
       param(0) = cint(split(args("birthday"), ".")(2))
       param(1) = cint(split(args("birthday"), ".")(1))
       param(2) = cint(split(args("birthday"), ".")(0))
-      myclient.contract_call(abi, contract_id, "setBirthday", param, 0, true)
+      tid = myclient.contract_call(abi, contract_id, "setBirthday", param, 0, true)
       upd = 1
+      logger "Birthday update transaction: " & tid
     end if
 
     MyForms.addScreen("UpdateDone")
